@@ -1,14 +1,10 @@
-type Project = {
-    id: number
-    title: string
-    description: string
-    technologies: string
-    toCode: string
-    toViewing: string
-    backgroundColor: string
-}
+import github from './Assets/icons/github.png'
+import gitlab from './Assets/icons/gitlab.png'
+import linkedin from './Assets/icons/linkedin.png'
+import telegram from './Assets/icons/telegram.png'
+import instagram from './Assets/icons/instagram.png'
 
-export const PROJECTS: Project[] = [
+export const PROJECTS: ProjectType[] = [
     {
         id: 1,
         title: 'Weather App',
@@ -23,7 +19,8 @@ export const PROJECTS: Project[] = [
         id: 2,
         title: 'TV Show App',
         description: '',
-        technologies: 'React, hooks, typescript, axios, styled-components, material-ui',
+        technologies:
+            'React, hooks, typescript, axios, styled-components, material-ui',
         toCode: 'https://github.com/st63/tv-shows-app',
         toViewing: 'https://st63.github.io/tv-shows-app/',
         backgroundColor: '',
@@ -32,7 +29,8 @@ export const PROJECTS: Project[] = [
         id: 3,
         title: 'Asteroid monitoring app',
         description: '',
-        technologies: 'React, redux, react-router, redux-thunk, axios, styled-components, luxon, adaptive',
+        technologies:
+            'React, redux, react-router, redux-thunk, axios, styled-components, luxon, adaptive',
         toCode: 'https://github.com/st63/asteroid-monitoring',
         toViewing: 'https://st63.github.io/asteroid-monitoring/',
         backgroundColor: '',
@@ -50,7 +48,8 @@ export const PROJECTS: Project[] = [
         id: 5,
         title: 'Social networking site',
         description: '',
-        technologies: 'React, redux, react-router, redux-thunk, axios, material-ui, redux-form',
+        technologies:
+            'React, redux, react-router, redux-thunk, axios, material-ui, redux-form',
         toCode: 'https://github.com/st63/react-social-networking-site',
         toViewing: '',
         backgroundColor: '',
@@ -87,7 +86,8 @@ export const PROJECTS: Project[] = [
         id: 9,
         title: 'Test landing page',
         description: '',
-        technologies: 'SCSS, jQuery, БЭМ, Bootstrap 4, Gulp, Perfect Pixel, adaptive',
+        technologies:
+            'SCSS, jQuery, БЭМ, Bootstrap 4, Gulp, Perfect Pixel, adaptive',
         toCode: 'https://github.com/st63/test-lending-page/tree/master/src',
         toViewing: 'https://st63.github.io/pages/bootstrap-landing',
         backgroundColor: '',
@@ -104,7 +104,7 @@ export const PROJECTS: Project[] = [
 ]
 
 export const TECHNOLOGIES: string[] = [
-    'React',
+    'React: hooks, redux, mobX, material-ui, styled-components',
     'React Native',
     'Next.js',
     'PWA',
@@ -119,48 +119,54 @@ export const TECHNOLOGIES: string[] = [
     'Методология БЭМ',
     'Умею верстать по макету (Pixel Perfect)',
     'Adobe Photoshop, Figma',
-    'ОС Linux, Windows'
+    'ОС Linux, Windows',
 ]
 
-type Link = {
-    title: string
-    to: string
-}
-
-export const ACCOUNTS: Link[] = [
+export const ACCOUNTS: LinkType[] = [
     {
+        id: 1,
         title: 'Github',
+        icon: github,
         to: 'https://github.com/st63',
     },
     {
+        id: 2,
         title: 'Gitlab',
+        icon: gitlab,
         to: 'https://gitlab.com/st63',
     },
     {
+        id: 3,
         title: 'Linkedin',
+        icon: linkedin,
         to: 'https://www.linkedin.com/in/stanislav-andreev',
     },
     {
+        id: 4,
         title: 'Telegram',
+        icon: telegram,
         to: 'https://t.me/stanislav017',
     },
     {
+        id: 5,
         title: 'Instagram',
+        icon: instagram,
         to: 'https://www.instagram.com/stanislavandreev163/',
     },
 ]
 
-export const CERTIFICATES: Link[] = [
+export const CERTIFICATES: CertificateType[] = [
     {
+        id: 1,
         title: 'Сертификат Mercury Academy',
         to: 'https://academy.mercdev.com/p/glKzY',
     },
 ]
 
-export const ABOUT_ME: string = `Ищу удаленную работу на позицию Frontend React Developer
+export const ABOUT_ME = `Ищу удаленную работу на позицию Frontend React Developer
 (есть опыт коммерческой разработки). Мечтаю попасть в команду профессионалов,
 учиться у мастеров и стать сильным React разработчиком!`
 
 export const COLORS = {
-    GREY: '',
+    GREY: '#E5E5E5',
 }

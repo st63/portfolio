@@ -4,8 +4,14 @@
         "es2021": true
     },
     "extends": [
+        "eslint:recommended",
         "plugin:react/recommended",
-        "airbnb"
+        "plugin:react/jsx-runtime",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:import/recommended",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -15,56 +21,17 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
     "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
         }
-      }
     },
+    "plugins": ["react", "@typescript-eslint"],
     "rules": {
-      "react/prop-types": 0,
-        "import/no-named-as-default": 0,
-        "import/no-named-as-default-member": 0,
-        "react/jsx-filename-extension": 0,
-        "import/prefer-default-export": 0,
-        "react/jsx-props-no-spreading": 0,
-        "default-case": 0,
-        "no-lone-blocks": 0,
-        "no-plusplus": 0,
-        "no-restricted-syntax": 0,
-        "no-param-reassign": 0,
-        "class-methods-use-this": 0,
-        "max-len": 0,
-        "react/destructuring-assignment": 0,
-        "camelcase": 0,
-        "no-mixed-operators": 0,
-        "react/state-in-constructor": 0,
-        "no-unused-vars": [
-          "error",
-          {
-            "caughtErrorsIgnorePattern": "^ignore"
-          }
-        ],
-        "@typescript-eslint/no-undef": "off",
-        "react/jsx-uses-react": 1,
-        "react/jsx-uses-vars": "error",
-        "import/extensions": "off",
-        "react/react-in-jsx-scope": "off",
-        "no-console": "off",
-        "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }],
-        "no-use-before-define": [0],
-        "@typescript-eslint/no-use-before-define": [1],
-        "no-shadow": "off",
-        "no-undef": "off",
-        "comma-dangle": "off",
-        "object-curly-newline": "off",
-        "operator-linebreak": "off",
-        "no-unused-vars": "off"
-
+        "react/tsx-filename-extension": "off",
+        "react/jsx-filename-extension": "off",
+        "import/no-unresolved": "off"
     }
 }
