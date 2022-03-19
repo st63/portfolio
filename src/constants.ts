@@ -37,6 +37,16 @@ export const PROJECTS: ProjectType[] = [
     },
     {
         id: 4,
+        title: 'Football schedule app',
+        description: '',
+        technologies:
+            'React, typescript, hooks, react-router, axios, styled-components',
+        toCode: 'https://github.com/st63/football-schedule',
+        toViewing: 'https://st63.github.io/football-schedule/',
+        backgroundColor: '',
+    },
+    {
+        id: 5,
         title: 'Todo list',
         description: '',
         technologies: 'React, hooks',
@@ -45,7 +55,7 @@ export const PROJECTS: ProjectType[] = [
         backgroundColor: '',
     },
     {
-        id: 5,
+        id: 6,
         title: 'Social networking site',
         description: '',
         technologies:
@@ -55,7 +65,7 @@ export const PROJECTS: ProjectType[] = [
         backgroundColor: '',
     },
     {
-        id: 6,
+        id: 7,
         title: 'Pages with posts',
         description: '',
         technologies: `React, typescript, redux, react-router, redux-thunk,
@@ -65,7 +75,7 @@ export const PROJECTS: ProjectType[] = [
         backgroundColor: '',
     },
     {
-        id: 7,
+        id: 8,
         title: 'Landing page',
         description: '',
         technologies: 'jQuery, adaptive',
@@ -74,7 +84,7 @@ export const PROJECTS: ProjectType[] = [
         backgroundColor: '',
     },
     {
-        id: 8,
+        id: 9,
         title: 'Admin panel',
         description: '',
         technologies: 'SCSS, jQuery, Gulp, Perfect Pixel',
@@ -83,7 +93,7 @@ export const PROJECTS: ProjectType[] = [
         backgroundColor: '',
     },
     {
-        id: 9,
+        id: 10,
         title: 'Test landing page',
         description: '',
         technologies:
@@ -93,7 +103,7 @@ export const PROJECTS: ProjectType[] = [
         backgroundColor: '',
     },
     {
-        id: 10,
+        id: 11,
         title: 'Form',
         description: '',
         technologies: 'jQuery',
