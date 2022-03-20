@@ -32,10 +32,15 @@ export const AppContainer = styled.div`
 
     @media (max-width: 1180px) {
         width: 100%;
+        max-width: 100%;
     }
 
     @media (max-width: 940px) {
         padding-bottom: 30px;
+    }
+
+    @media (max-width: 750px) {
+        overflow: hidden;
     }
 `
 
