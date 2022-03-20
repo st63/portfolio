@@ -7,7 +7,7 @@ export const Header: FC = () => {
         <Container>
             <TitleWrap>
                 <Title>Portfolio</Title>
-                <Name>Andreev Stanislav</Name>
+                <Name>Stanislav Andreev</Name>
             </TitleWrap>
             <AccountsBlock />
         </Container>

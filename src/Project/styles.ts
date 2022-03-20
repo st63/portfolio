@@ -15,6 +15,15 @@ export const Container = styled.div`
         box-shadow: 0 15px 63px rgb(65 96 234 / 41%);
         transition: box-shadow 0.5s ease;
     }
+
+    @media (max-width: 590px) {
+        border-radius: 5%;
+    }
+
+    @media (max-width: 475px) {
+        height: 245px;
+        padding: 20px 20px 35px 20px;
+    }
 `
 
 export const TitleWrap = styled.div`
@@ -22,7 +31,27 @@ export const TitleWrap = styled.div`
 `
 
 export const Title = styled.h2`
-    font-size: 34px;
+    font-size: 26px;
+
+    @media (max-width: 860px) {
+        font-size: 26px;
+    }
+
+    @media (max-width: 656px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 22px;
+    }
+
+    @media (max-width: 560px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 475px) {
+        font-size: 18px;
+    }
 `
 
 export const ContentWrap = styled.div`
@@ -34,11 +63,24 @@ export const ContentWrap = styled.div`
 
 export const Description = styled.p`
     font-size: 24px;
+
+    @media (max-width: 860px) {
+        font-size: 22px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 560px) {
+        font-size: 16px;
+    }
 `
 
-export const Buttons = styled.div`
+export const Buttons = styled.div<{ toViewing: string }>`
     display: flex;
-    justify-content: space-between;
+    justify-content: ${({ toViewing }) =>
+        toViewing ? 'space-between' : 'end'};
 `
 
 export const LinkButton = styled(Button)``

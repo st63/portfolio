@@ -23,17 +23,19 @@ export const Project: FC<ProjectType> = ({
             </TitleWrap>
             <ContentWrap>
                 <Description>{technologies}</Description>
-                <Buttons>
-                    <LinkButton variant="outlined" size="large">
+                <Buttons toViewing={toViewing}>
+                    {toViewing && (
                         <Link href={toViewing} target="blank">
-                            Превью
+                            <LinkButton variant="outlined" size="large">
+                                Превью
+                            </LinkButton>
                         </Link>
-                    </LinkButton>
-                    <LinkButton variant="outlined" size="large">
-                        <Link href={toCode} target="blank">
+                    )}
+                    <Link href={toCode} target="blank">
+                        <LinkButton variant="outlined" size="large">
                             Код
-                        </Link>
-                    </LinkButton>
+                        </LinkButton>
+                    </Link>
                 </Buttons>
             </ContentWrap>
         </Container>
