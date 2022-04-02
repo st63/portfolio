@@ -157,12 +157,6 @@ export const ACCOUNTS: LinkType[] = [
         icon: telegram,
         to: 'https://t.me/stanislav017',
     },
-    {
-        id: 5,
-        title: 'Instagram',
-        icon: instagram,
-        to: 'https://www.instagram.com/stanislavandreev163/',
-    },
 ]
 
 export const CERTIFICATES: CertificateType[] = [
